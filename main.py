@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi_mcp import FastApiMCP
 import sqlite3
 
