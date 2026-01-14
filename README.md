@@ -8,7 +8,7 @@ TrailSafe is an AI assistant designed to help hikers stay safe by providing:
 Tech Stack:   
 Backend: Python, FastAPI, FastApiMCP  
 Database: SQLite  
-Voice Interaction: Telenyx   
+Voice Interaction: Telnyx   
 
 
 --------------------------------------------------------------------------------------------------------------------------
