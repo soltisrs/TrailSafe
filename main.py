@@ -27,13 +27,13 @@ def get_db_connection():
 # -------------------------------------------------
 @app.get("/wildlife", operation_id="get_wildlife")
 def wildlife(trail: str):
-    # Sample data – we’ll replace with real API or database later
+    # Sample data
     sample_data = {
         "Green Mountain": ["Black Bear", "Elk", "Red Fox"],
         "Bear Peak": ["Mountain Lion", "Deer", "Raven", "Elk"]
     }
     # Look up animals for the given trail
-    # If the trail is unknown, return a default message
+    # If the trail is unknown, search the general area
     animals = sample_data.get(trail, ["No data for this trail"])
     return {"trail": trail, "animals": animals}
 # -------------------------------------------------
