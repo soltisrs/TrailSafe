@@ -41,6 +41,9 @@ Example MCP Tool Usage
 
 --------------------------------------------------------------------------------------------------------------------------
 ## Example Conservation Flow with AI Assistant 
+
+Available on phone number: 720-912-0944  
+
 Prompt: “Where are you hiking today?”   
 Ideal Answer: ```Boulder, CO``` (can list anywhere in the United States)   
   
