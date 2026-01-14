@@ -2,4 +2,3 @@ fastapi
 uvicorn
 fastapi-mcp
 pydantic
-sqlite3
