@@ -103,6 +103,22 @@ def recent_sightings(
             {"area": r[0], "trail": r[1], "animal": r[2], "date": r[3]} for r in rows
         ]
     }
+
+@app.post("/webhooks/telnyx/inbound")
+async def telnyx_inbound(request: Request):
+    """
+    Handles inbound requests from Telnyx (required by Voice API Application).
+    Responds with a simple greeting or can trigger MCP tools.
+    """
+    body = await request.json()
+    print("Inbound Telnyx payload:", body)  # log for debugging
+
+    # Respond with simple text-to-speech
+    return {
+        "actions": [
+            {"say": {"text": "TrailSafe is online. Ask me about wildlife or safety tips!"}}
+        ]
+    }
 # -------------------------------------------------
 # MCP Server Setup
 # This exposes selected FastAPI endpoints
