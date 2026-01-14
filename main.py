@@ -111,3 +111,8 @@ def recent_sightings(
 mcp = FastApiMCP(app,include_operations=['get_recent_sightings','get_wildlife','get_safety_tips'])
 # Mount the MCP server so it is available at /mcp
 mcp.mount()
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=int(os.environ.get("PORT", 8000)), reload=True)
